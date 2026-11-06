@@ -1,0 +1,90 @@
+{
+  "dataset": "Validation",
+  "images": 5319,
+  "total_errors": 167,
+  "target_accepted_accuracy": 0.98,
+  "model_epoch": 11,
+  "selected_threshold": 0.7,
+  "selection_reason": "Обеспечивает не менее 98% правильных ответов среди автоматически принятых изображений при минимальном числе ручных проверок.",
+  "selected_metrics": {
+    "threshold": 0.7,
+    "total_images": 5319,
+    "accepted_images": 5111,
+    "manual_review_images": 208,
+    "manual_review_percent": 3.9105094942658396,
+    "accepted_accuracy": 0.9823909215417727,
+    "accepted_errors": 90,
+    "detected_errors": 77,
+    "detected_errors_percent": 46.10778443113772
+  },
+  "all_results": [
+    {
+      "threshold": 0.6,
+      "total_images": 5319,
+      "accepted_images": 5210,
+      "manual_review_images": 109,
+      "manual_review_percent": 2.049257379206618,
+      "accepted_accuracy": 0.9754318618042227,
+      "accepted_errors": 128,
+      "detected_errors": 39,
+      "detected_errors_percent": 23.353293413173652
+    },
+    {
+      "threshold": 0.7,
+      "total_images": 5319,
+      "accepted_images": 5111,
+      "manual_review_images": 208,
+      "manual_review_percent": 3.9105094942658396,
+      "accepted_accuracy": 0.9823909215417727,
+      "accepted_errors": 90,
+      "detected_errors": 77,
+      "detected_errors_percent": 46.10778443113772
+    },
+    {
+      "threshold": 0.8,
+      "total_images": 5319,
+      "accepted_images": 4988,
+      "manual_review_images": 331,
+      "manual_review_percent": 6.222974243278812,
+      "accepted_accuracy": 0.9867682437850842,
+      "accepted_errors": 66,
+      "detected_errors": 101,
+      "detected_errors_percent": 60.47904191616767
+    },
+    {
+      "threshold": 0.85,
+      "total_images": 5319,
+      "accepted_images": 4900,
+      "manual_review_images": 419,
+      "manual_review_percent": 7.877420567775898,
+      "accepted_accuracy": 0.9887755102040816,
+      "accepted_errors": 55,
+      "detected_errors": 112,
+      "detected_errors_percent": 67.06586826347305
+    },
+    {
+      "threshold": 0.9,
+      "total_images": 5319,
+      "accepted_images": 4768,
+      "manual_review_images": 551,
+      "manual_review_percent": 10.359090054521527,
+      "accepted_accuracy": 0.9922399328859061,
+      "accepted_errors": 37,
+      "detected_errors": 130,
+      "detected_errors_percent": 77.8443113772455
+    },
+    {
+      "threshold": 0.95,
+      "total_images": 5319,
+      "accepted_images": 4532,
+      "manual_review_images": 787,
+      "manual_review_percent": 14.796014288400075,
+      "accepted_accuracy": 0.9962488967343336,
+      "accepted_errors": 17,
+      "detected_errors": 150,
+      "detected_errors_percent": 89.82035928143712
+    }
+  ],
+  "training_performed": false,
+  "test_used_for_selection": false
+}

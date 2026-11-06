@@ -1,0 +1,45 @@
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+
+# Dataset files
+data/
+datasets/
+dataset/
+
+# Training and testing outputs
+outputs/
+outputs_backup_*/
+
+# Model checkpoints (selected model will be added separately)
+*.pth
+*.pt
+*.joblib
+
+# Temporary files and archives
+*.log
+*.tmp
+*.zip
+week5_source.txt
+
+# IDE and system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+desktop.ini
