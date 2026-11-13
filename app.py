@@ -1,4 +1,4 @@
-"""Графический интерфейс Cargo CNN: подготовка, обучение и тестирование (недели 2–5)."""
+"""Графический интерфейс Cargo CNN: подготовка, обучение и тестирование (недели 2–6)."""
 from pathlib import Path
 import json
 import os
@@ -15,7 +15,7 @@ from src.hog_svm import run
 class CargoApp(tk.Tk):
     def __init__(self):
         super().__init__()
-        self.title("Cargo CNN — недели 2–5")
+        self.title("Cargo CNN — недели 2–6")
         self.geometry("1180x850")
         self.minsize(980, 680)
         self.data_dir = tk.StringVar(value="data/prepared_cargo_cnn/object_crops")
@@ -73,6 +73,7 @@ class CargoApp(tk.Tk):
         ttk.Label(root, text="CNN обучается с нуля; на каждой эпохе отображаются train и validation.", foreground="#666").pack(anchor="w", pady=(8,0))
         self._build_week4_tab()
         self._build_week5_tab()
+        self._build_week6_tab()
 
     def _build_week4_tab(self):
         tab=ttk.Frame(self.notebook,padding=14); self.notebook.add(tab,text="Неделя 4 — оптимизация CNN")
@@ -189,6 +190,12 @@ class CargoApp(tk.Tk):
         ).pack(anchor="w", pady=4)
         self.w5_log = tk.Text(tab, height=19, wrap="word", font=("Consolas", 10))
         self.w5_log.pack(fill="both", expand=True)
+
+    def _build_week6_tab(self):
+        from src.week6_gui import Week6Tab
+
+        tab = Week6Tab(self.notebook)
+        self.notebook.add(tab, text="Неделя 6 — экспертная система")
 
     def _choose_week5_dataset(self):
         """Выбор только исходного датасета (папка с test)."""
